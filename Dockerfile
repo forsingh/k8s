@@ -16,7 +16,6 @@ RUN mv ./kubectl /usr/local/bin/kubectl
 
 #install AWS CLI 
 RUN  yum -y update
-#RUN  yum -y install python-pip
 RUN  curl "https://bootstrap.pypa.io/get-pip.py" -o "get-pip.py"
 RUN  python get-pip.py
 RUN  pip install awscli
